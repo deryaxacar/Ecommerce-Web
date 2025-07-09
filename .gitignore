@@ -1,0 +1,4 @@
+config/*.php
+database/*.sql
+.env
+*.log
