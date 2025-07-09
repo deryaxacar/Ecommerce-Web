@@ -1,0 +1,138 @@
+:root {
+    --color-charcoal-dark: #333;
+    --color-charcoal-medium: #444;
+    --color-charcoal: #555;
+    --color-gray-light: #f3f3f3;
+    --color-gray-medium: #ccc;
+    --color-white: #fff;
+    --color-red: #e53935;
+    --color-black: #000;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: var(--color-gray-light);
+    color: var(--color-charcoal-dark);
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: var(--color-white);
+    border: 1px solid var(--color-gray-medium);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--color-charcoal-dark);
+}
+
+.sidebar h1 {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    text-align: center;
+    color: var(--color-white);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0.5rem 0;
+    border-radius: 4px;
+}
+
+form {
+    display: flex;
+}
+
+form>div {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--color-charcoal);
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="file"],
+form textarea {
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    border: 1px solid var(--color-gray-medium);
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    background: var(--color-white);
+    color: var(--color-charcoal-dark);
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+form button {
+    align-self: stretch;
+    width: 100%;
+    align-items: center;
+    background: var(--color-charcoal-dark);
+    color: var(--color-white);
+    border: none;
+    margin-top: 3px;
+    cursor: pointer;
+    transition: background 0.2s;
+    height: 40px;
+    width: 100% !important;
+}
+
+form button:hover {
+    background: #5a6268;
+}
+
+.message,
+.error {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.message {
+    color: var(--color-black);
+}
+
+.error {
+    color: var(--color-red);
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    margin-top: 0px;
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 4px;
+    max-width: 800px;
+    max-height: 300px;
+    flex-direction: column;
+}
+
+.product-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 4px 4px 0 0;
+}
